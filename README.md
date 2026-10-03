@@ -16,6 +16,17 @@ software, trading-research and automation projects.
 - **Magical Conquest** — Unreal Engine fantasy game prototype.
 - **CodePhantom Website** — public Next.js company/project site.
 
+## Recent engineering milestones
+
+- **2026-10-03 — Remote EA execution V1:** completed a fail-closed Python/MT5 execution layer with OFF/SHADOW/DEMO modes, hard demo-account enforcement, stop-distance risk sizing, spread/drawdown/position gates, idempotent execution journaling and backend command integration. Dedicated execution/control CI: **20 tests passing**.
+- **2026-10-03 — Remote quantitative research runner:** operationalized a Windows self-hosted GitHub Actions runner connected to local MT5 research data, allowing reproducible causal M1/tick audits, broker bid/ask spread diagnostics, robustness reports and remote experiment queues without committing market datasets to Git.
+- **2026-10-03 — Prop-firm research framework:** separated custom portfolio stress policies from real firm rule emulation and added a frozen-ledger framework for testing the same strategy sequence against documented FTMO/FundedNext loss, target and consistency constraints.
+- **2026-09 — CodePhantom mobile/backend platform:** built a Flutter Android/PWA client and Node.js/TypeScript backend covering authentication, RBAC, scanner review, signals, licences, notifications, EA control surfaces, audit logging and PostgreSQL/Supabase persistence.
+- **2026-09 — Release/deployment hardening:** shipped signed Android staging builds, web/PWA delivery, backend deployment controls, CORS/host hardening and least-privilege CI changes across the CodePhantom repositories.
+- **2026 — Research discipline:** built deterministic strategy experiments with causal lower-timeframe validation, tick-level outcome ordering, out-of-sample separation, cost sensitivity and preserved failed hypotheses rather than post-hoc backtest tuning.
+
+See [ENGINEERING_MILESTONES.md](./ENGINEERING_MILESTONES.md) for the longer recruiter-safe timeline.
+
 ## Tech
 
 Python · Java · C# · TypeScript · Flutter/Dart · Next.js · Node.js ·
