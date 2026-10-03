@@ -13,7 +13,7 @@ This is a recruiter-safe record of notable engineering work by **Ripfumelo Vunen
 - Added `order_check` before broker submission.
 - Added a durable signal-id journal to prevent duplicate execution across process restarts.
 - Added a clean strategy-to-execution intent interface so research code never calls the broker directly.
-- Expanded dedicated CI to **20 passing control/execution tests**.
+- Expanded dedicated CI to **26 passing control/execution tests** after the prop-risk milestone.
 
 ### Remote quantitative research runner
 - Operated a Windows self-hosted GitHub Actions runner for private MT5-backed research.
@@ -26,6 +26,7 @@ This is a recruiter-safe record of notable engineering work by **Ripfumelo Vunen
 - Added a dedicated frozen-ledger replay architecture for documented FTMO and FundedNext constraints.
 - Preserved original strategy outputs while testing deployment compatibility independently from signal quality.
 - Added support for loss limits, profit targets, minimum trading days and consistency-style rules without retroactively changing strategy entries.
+- Merged named FTMO/FundedNext demo risk profiles into the EA, including optional concurrent stop-risk enforcement.
 
 ### Research integrity
 - Continued preserving failed and inconclusive strategy versions instead of deleting losing evidence.
