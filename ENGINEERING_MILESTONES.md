@@ -15,6 +15,18 @@ This is a recruiter-safe record of notable engineering work by **Ripfumelo Vunen
 - Added a clean strategy-to-execution intent interface so research code never calls the broker directly.
 - Expanded dedicated CI to **26 passing control/execution tests** after the prop-risk milestone.
 
+### Deriv public API integration
+- Added a dependency-free WebSocket client for Deriv public market data.
+- Dynamically resolved CodePhantom canonical symbols to Deriv instrument identifiers instead of hard-coding broker names.
+- Verified direct public candle access from the Windows self-hosted runner without API tokens or broker credentials.
+- Resolved 20 of the 22 requested markets, including forex majors/crosses, Germany 40, Wall Street 30, US Tech 100, BTC/USD, ETH/USD, gold and silver; CAD/JPY and NZD/CAD were reported missing rather than silently substituted.
+- Added paged historical acquisition into the persistent research cache for cross-feed EMA/SMC testing.
+
+### Mobile EA remote controls
+- Merged the existing Flutter EA dashboard's pause/resume, risk, disable-new-entries and emergency-stop methods into the backend allow-listed command queue.
+- Kept production controls hidden and backend feature flags off by default, so capability can be shipped without silently enabling execution.
+- Preserved the same CodePhantom application as the control surface; no second mobile app is required.
+
 ### Remote quantitative research runner
 - Operated a Windows self-hosted GitHub Actions runner for private MT5-backed research.
 - Kept large market datasets and tick caches outside Git while attaching them to reproducible CI jobs at runtime.
