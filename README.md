@@ -61,3 +61,9 @@ production systems.
 - Maintaining recruiter-safe public documentation while production trading logic and credentials remain private.
 
 > This profile README is maintained as the public index for ongoing CodePhantom engineering work. New public-safe projects and milestones can be added here as they mature.
+
+---
+
+## Project status update — 13 October 2026
+
+Current focus: [CodePhantom Android PR #22](https://github.com/st10490392/code-phantom-App/pull/22) (private signed RC15, 272 Flutter tests, OWNER staging registration works; push delivery unverified); [Backend PR #33](https://github.com/st10490392/code-phantom-backend/pull/33) (staging-only secure test endpoint, 171 unit/integration + 146 PostgreSQL tests; no push sent); [CPT-Scanner QIN PR #35](https://github.com/st10490392/CPT-Scanner/pull/35) (Phase 4.2 offline acceptance: 128 CI tests, six C++ checks, 24-candle soak across nine restarts). ENKIDU SHADOW setup-readiness, Windows native/EA/Azure acceptance and real notification delivery remain pending. No live trading or public APK release claimed.
