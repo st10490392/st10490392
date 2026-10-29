@@ -1,69 +1,105 @@
-# Hi, I'm Ginger / CodePhantom 👋
+# Hi, I'm Ginger 👋
+### Junior Software Developer · Full-Stack Engineering · Automation & Applied Research
 
-Software developer building **CodePhantom Technologies** — a collection of
-software, trading-research and automation projects.
+I'm Ripfumelo Vunene Ngobeni (Ginger), a software development diploma student at **Rosebank International** (expected completion: 2027) and founder of **CodePhantom Technologies**.
 
-## What I'm building
+I enjoy building end-to-end systems: turning a problem into an architecture, implementing the client and API, testing the behaviour, and documenting how to run and maintain it. My current interests include full-stack development, secure APIs, automation, AI-agent tooling, and reproducible quantitative research.
 
-- **CodePhantom App** — Flutter Android/PWA client for scanner, signals,
-  licensing, notifications and remote-EA controls.
-- **CodePhantom Backend** — Node.js/TypeScript + PostgreSQL/Supabase API with
-  auth, permissions, entitlements, licensing, integrations and audit trails.
-- **CPT Scanner / Research Framework** — Python + MT5 research platform with
-  deterministic datasets, causal M1/tick audits and chronological replication.
-- **Remote EA Platform** — mobile control plane + Windows/Azure MT5 execution
-  agent, starting in shadow/demo mode with hard risk controls.
-- **Magical Conquest** — Unreal Engine fantasy game prototype.
-- **CodePhantom Website** — public Next.js company/project site.
-
-## Recent engineering milestones
-
-- **2026-10-03 — Remote EA execution V1:** completed a fail-closed Python/MT5 execution layer with OFF/SHADOW/DEMO modes, hard demo-account enforcement, stop-distance risk sizing, spread/drawdown/position gates, idempotent execution journaling and backend command integration. Dedicated execution/control CI: **26 tests passing** after adding prop-firm-aware risk profiles and concurrent-risk enforcement.
-- **2026-10-03 — Remote quantitative research runner:** operationalized a Windows self-hosted GitHub Actions runner connected to local MT5 research data, allowing reproducible causal M1/tick audits, broker bid/ask spread diagnostics, robustness reports and remote experiment queues without committing market datasets to Git.
-- **2026-10-03 — Deriv public API research bridge:** connected the Windows runner directly to Deriv's unauthenticated WebSocket market-data API, dynamically resolved 20/22 target instruments (including BTC, ETH, gold and silver), verified M30/H1/D1 candle access, and added persistent paged historical acquisition for cross-feed strategy research.
-- **2026-10-03 — Mobile EA control plumbing:** merged CodePhantom App controls for pause/resume, risk commands, disable-new-entries and emergency stop into the backend command queue, while keeping production visibility and backend feature flags fail-closed.
-- **2026-10-03 — Prop-firm research + execution profiles:** separated custom portfolio stress policies from real firm rule emulation, added frozen-ledger FTMO/FundedNext rule replay, and merged named FTMO/FundedNext risk profiles into the demo EA without changing strategy logic.
-- **2026-09 — CodePhantom mobile/backend platform:** built a Flutter Android/PWA client and Node.js/TypeScript backend covering authentication, RBAC, scanner review, signals, licences, notifications, EA control surfaces, audit logging and PostgreSQL/Supabase persistence.
-- **2026-09 — Release/deployment hardening:** shipped signed Android staging builds, web/PWA delivery, backend deployment controls, CORS/host hardening and least-privilege CI changes across the CodePhantom repositories.
-- **2026 — Research discipline:** built deterministic strategy experiments with causal lower-timeframe validation, tick-level outcome ordering, out-of-sample separation, cost sensitivity and preserved failed hypotheses rather than post-hoc backtest tuning.
-
-See [ENGINEERING_MILESTONES.md](./ENGINEERING_MILESTONES.md) for the longer recruiter-safe timeline.
-
-## Tech
-
-Python · Java · C# · TypeScript · Flutter/Dart · Next.js · Node.js ·
-PostgreSQL · Supabase · GitHub · Linux · MetaTrader 5 · Unreal Engine
-
-## How I work
-
-I like building systems end-to-end: research, backend, client apps, deployment,
-testing and operational tooling. For quantitative work I keep failed experiments
-in the record and require fresh replication instead of tuning a strategy until a
-backtest looks good.
-
-## Public work
-
-Start with the **CodePhantom website repository** and its
-`docs/ENGINEERING_PORTFOLIO.md` for a recruiter-safe overview of the private
-production systems.
-
-> Production trading logic, credentials, signing material and customer data stay
-> private by design.
-
+- 🌍 Based in South Africa; open to junior roles, internships, freelance work, and relocation.
+- 🎓 Diploma in Software Development — in progress, expected 2027.
+- 🧰 Interested in junior software development, backend/API engineering, QA/automation, and entry-level cybersecurity or systems roles that match my current skills.
+- 🏗️ Founder / builder at CodePhantom Technologies.
+- 📌 I keep private production logic, credentials, signing material, and customer data out of public repositories.
 
 ---
 
-## Current engineering focus
+## Featured engineering work
 
-- Building a remote MT5 execution control plane for the existing CodePhantom app/backend.
-- Researching reproducible intraday strategies with causal lower-timeframe and tick validation.
-- Expanding the public CodePhantom website into a safe shop/portfolio surface.
-- Maintaining recruiter-safe public documentation while production trading logic and credentials remain private.
+### [CodePhantom Technologies Website](https://github.com/st10490392/code-phantom-website)
+**Next.js · TypeScript · React · Tailwind CSS**
 
-> This profile README is maintained as the public index for ongoing CodePhantom engineering work. New public-safe projects and milestones can be added here as they mature.
+A public company and portfolio website. Work includes responsive UI, structured content, SEO/structured data, typed content models, deployment workflows, and a server-side route for the site assistant.
+
+**What it demonstrates:** modern web development, component organisation, typed configuration, and release discipline.
+
+### CodePhantom App & Backend — private repositories
+**Flutter/Dart · Node.js · TypeScript · Express · PostgreSQL/Supabase**
+
+A mobile/PWA client and API platform under active development. The architecture covers authenticated user flows, role/permission-aware screens, scanner and signal review, licensing/entitlements, notification surfaces, audit logging, and remote EA control interfaces.
+
+Engineering work includes allow-listed command handling, feature flags, integration-key authentication, authorization checks, rate limiting, and staging/release controls. The source is private, so this profile describes the architecture without exposing secrets or customer data.
+
+### CPT Scanner & quantitative research framework — private repository
+**Python · MetaTrader 5 · pytest · GitHub Actions**
+
+A market-data and research system with multi-timeframe acquisition, deterministic experiment records, chronological validation, lower-timeframe/tick execution checks, broker-cost diagnostics, and robustness reporting.
+
+A key design principle is to preserve negative and inconclusive experiments instead of tuning results until a backtest looks attractive. Strategy candidates remain separate from execution, and promotion requires additional evidence.
+
+### Remote EA execution and risk-control research — private repositories
+**Python · MetaTrader 5 · API integration · automated tests**
+
+Built an execution-control layer with explicit OFF/SHADOW/DEMO modes, a guard against REAL/CONTEST/unknown account modes, stop-distance-based sizing, broker-volume and spread checks, position limits, drawdown gates, emergency-stop handling, pre-submission order checks, and duplicate-signal journaling.
+
+The dedicated execution/control test suite reached **26 passing tests** at the documented milestone. This is engineering and demo/shadow validation work—not a claim of profitable live trading.
+
+### [RaceDay — Programming 2B API](https://github.com/st10490392/PROG6212W_POE)
+**C# · ASP.NET Core · Entity Framework Core · SQL Server**
+
+An academic event-management API for road-running, walking, and cycling events. The project includes domain models, REST endpoints, validation, relational persistence, authentication/ownership checks, migrations, and unit/integration testing.
+
+This project demonstrates structured .NET API development and relational database design. The repository documents setup and test procedures; it is coursework, not a claimed production service.
+
+### [Magical Conquest](https://github.com/st10490392/magical-conquest-)
+**Unreal Engine · gameplay prototyping**
+
+A fantasy game prototype exploring gameplay systems such as progression, combat, inventory/equipment, and loot.
+
+### ASTRO — personal AI-assistant engineering
+**Hermes Agent · Python · Markdown knowledge systems · Windows/Linux**
+
+A personal project exploring persistent project context, reusable skills, session handoffs, capability inventories, local tooling, and a portable knowledge vault. Current work includes designing a local control interface and investigating voice, screenshot analysis, and secure remote access. These capabilities are being developed incrementally; I do not present planned features as finished.
 
 ---
 
-## Project status update — 13 October 2026
+## Technical toolkit
 
-Current focus: [CodePhantom Android PR #22](https://github.com/st10490392/code-phantom-App/pull/22) (private signed RC15, 272 Flutter tests, OWNER staging registration works; push delivery unverified); [Backend PR #33](https://github.com/st10490392/code-phantom-backend/pull/33) (staging-only secure test endpoint, 171 unit/integration + 146 PostgreSQL tests; no push sent); [CPT-Scanner QIN PR #35](https://github.com/st10490392/CPT-Scanner/pull/35) (Phase 4.2 offline acceptance: 128 CI tests, six C++ checks, 24-candle soak across nine restarts). ENKIDU SHADOW setup-readiness, Windows native/EA/Azure acceptance and real notification delivery remain pending. No live trading or public APK release claimed.
+**Languages:** Python, Java, C#, JavaScript/TypeScript, SQL  
+**Web & mobile:** Next.js, React, Node.js, Express, Flutter/Dart, REST APIs  
+**Data & persistence:** PostgreSQL, Supabase, SQL Server, Entity Framework Core  
+**Testing & delivery:** pytest, .NET testing, API/integration testing, Git, GitHub Actions, CI workflows  
+**Systems & domain tools:** Linux, Windows, PowerShell, MetaTrader 5, Unreal Engine
+
+I continue to deepen my SQL, backend architecture, test automation, secure coding, and production operations skills through coursework and project work.
+
+---
+
+## How I approach engineering
+
+- **Test behaviour, not just files:** use automated tests and explicit acceptance checks where practical.
+- **Build with safety boundaries:** validate inputs and permissions; use feature flags and staged/demo modes for sensitive operations.
+- **Make work reproducible:** document setup, data provenance, test commands, and known limitations.
+- **Preserve evidence:** keep failed experiments and explain why a result is not yet ready for promotion.
+- **Protect sensitive material:** keep credentials, signing keys, customer data, and private strategy implementation out of public Git history.
+
+## Education
+
+**Diploma in Software Development** — Rosebank International  
+In progress · Expected completion: 2027
+
+## Start here
+
+| Repository | What to look at |
+|---|---|
+| [CodePhantom Website](https://github.com/st10490392/code-phantom-website) | Public web application and portfolio architecture |
+| [RaceDay API / POE](https://github.com/st10490392/PROG6212W_POE) | C#, ASP.NET Core, EF Core, SQL Server, and API testing |
+| [Magical Conquest](https://github.com/st10490392/magical-conquest-) | Game-development prototype |
+| [Profile engineering milestones](./ENGINEERING_MILESTONES.md) | Recruiter-safe record of systems work, tests, and research discipline |
+
+For a broader public-safe overview of the private CodePhantom systems, see the [engineering portfolio](https://github.com/st10490392/code-phantom-website/blob/main/docs/ENGINEERING_PORTFOLIO.md).
+
+---
+
+**I'm open to opportunities where I can contribute, learn from experienced engineers, and grow through real software delivery.**
+
+*This profile distinguishes completed milestones from ongoing work and private-system descriptions. Test counts refer to the documented milestone at the time; they are not a claim that every current branch or deployment is passing today.*
